@@ -131,11 +131,23 @@ h6, .h6 {
     margin-top: calc(-1 * var(--gutter-y));
     margin-right: calc(-.5 * var(--gutter-x));
     margin-left: calc(-.5 * var(--gutter-x));
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.row>*{
+    flex-shrink: 0;
+   
+    padding-left: calc(.5 * var(--gutter-x));
+    padding-right:  calc(.5 * var(--gutter-x));
+    margin-top: var(--gutter-y);
 }
 
 
 .container{
     width: 100%;
+    max-width: 100%;
     padding-right: var(--gutter-x,  1rem);
     padding-left: var(--gutter-x,  1rem);
     margin-right: auto;
@@ -273,7 +285,7 @@ h6, .h6 {
 }
 
 .list-inline-item{
-
+    display: inline-block;
 }
 
 /* nav */
@@ -282,6 +294,10 @@ h6, .h6 {
 .navbar {
     padding-top: .5rem;
     padding-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .navbar-brand {
@@ -291,24 +307,53 @@ h6, .h6 {
     padding-top: .3125rem;
     padding-bottom: .3125rem;
     margin-right: 1rem;
+  
 }
 
 .navbar-nav {
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+.navbar-collapse{
+    align-items: center;
+    flex-basis: 100%;
+    flex-grow: 1;
+    
 }
 
-.nav-item{
+.navbar-expand{
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
 
+.navbar-expand .navbar-nav {
+    flex-direction: row;
+}
+.navbar-expand .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: space-between;
+}
+.nav-item{
+    padding: 0 0.5rem;
 }
 
 .nav-link {
     font-weight: 700;
-    color: rgb(250, 128, 114);
+    color: rgb(25, 28, 30);
     text-decoration: none;
     display: block;
     padding: .5rem 1rem;
+}
+
+
+.active {
+    font-weight: 400;
+    color: rgb(250, 128, 114);
+    
 }
 
 .navbar .nav-link {
@@ -334,8 +379,19 @@ h6, .h6 {
 
 }
 
+.position-relative{
+    position: relative !important;
+}
+
 .product-overlay{
     padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .btn {
@@ -351,6 +407,7 @@ h6, .h6 {
     background-color: transparent;
     border: 1px solid transparent;
     padding: .375rem .75rem;
+    display: inline-block;
 }
 
 .btn-block{
