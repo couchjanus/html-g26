@@ -1,22 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+
+<html>
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
-        <ol>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Catalog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ol>
-    </nav>
-    <h1>Product List</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis architecto nemo voluptate accusamus! Eligendi excepturi suscipit, <b>consequuntur illo dolorem</b> minima <strong>nesciunt quam odit? Iste </strong>consequuntur ab maiores, eum omnis fugiat.</p>
-    <img src="images/07.jpg" width="120">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <i>Perspiciatis architecto nemo voluptate accusamus!</i> Eligendi excepturi suscipit, <em>consequuntur illo dolorem minima nesciunt quam odit?</em> Iste consequuntur ab maiores, eum omnis fugiat.</p>
-</body>
+    <title>Shopaholic | Shoppng Cart project</title>
+    <meta name="description" content="Shopaholic - Shoppng Cart project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="icons/favicon.png">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;800&amp;display=swap">
+
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+    <!-- page-holder -->
+    <div>
+      <!-- navbar-->
+      <header class="bg-white">
+        <!-- container -->
+        <div class="container">
+          <nav class="navbar">
+            <!-- navbar-brand -->
+            <a href="index.html" class="navbar-brand"><span class="fw-bold text-uppercase text-dark">Shopaholic</span></a>
+            <!-- navbar-toggler -->
+
+            <div class="">
+              <!-- navbar-nav -->
+              <ul class="navbar-nav">
+                <!-- nav-item -->
+                <li class="nav-item">
+                  <!-- nav-link-->
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="shop.html" class="nav-link">Shop</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav">               
+                <li class="nav-item">
+                  <a href="cart.html" class="nav-link"><i class="fas fa-dolly-flatbed text-gray"></i>Cart<small class="text-gray">(<span>0</span>)</small></a>
+                </li>
+                <li class="nav-item"><a href="#!" class="nav-link"><i class="far fa-heart"></i><small class="text-gray">(<span>0</span>)</small></a>
+                </li>
+                <li class="nav-item"><a href="#login" class="nav-link"><i class="fas fa-user me-1 text-gray"></i>Login</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- HERO SECTION-->
+      <div class="container">
+        <!-- HERO SECTION-->
+        <section class="bg-light">
+          <div class="container">
+            <header class="text-center">
+            <p class="text-muted text-uppercase">Carefully created collections</p>
+            <h2 class="h5 text-uppercase">Browse our categories</h2>
+            </header>
+            
+            <div class="carousel">
+              <div class="slider">
+                <div class="slide-track">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-5">
+          <div class="container">
+            <div class="row">
+              <!-- SHOP SIDEBAR-->
+              <div class="">
+                <a class="anchor categories" href="#!"><h5 class="text-uppercase mb-4 py-2 px-4 bg-primary text-white d-flex justify-content-between"><span>All Categories</span> <span class="badge rounded bg-white text-teal">0</span></h5></a>
+                
+                <ul class="list-unstyled small text-muted ps-4 font-weight-normal">
+                  <li class="mb-2"><a class="reset-anchor" href="#!">Electronics</a></li>
+                  <li class="mb-2"><a class="reset-anchor" href="#!">USB drives</a></li>
+                  <li class="mb-2"><a class="reset-anchor" href="#!">Headphones</a></li>
+                  <li class="mb-2"><a class="reset-anchor" href="#!">Portable speakers</a></li>
+                  <li class="mb-2"><a class="reset-anchor" href="#!">Cell Phone</a></li>
+                  <li class="mb-2"><a class="reset-anchor" href="#!">Keyboards</a></li>
+                </ul>
+              </div>
+
+              <!-- SHOP LISTING-->
+              <div class="">
+                <div class="row catalog">
+                  <div class="">
+                    <div class="product text-center">
+                        <div class="">
+                            <a class="" href="detail.html"><img class="img-fluid" src="./images/product-1.jpg" alt="Kui Ye Chen’s AirPods"></a>
+                            <div class="product-overlay">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a class="btn" href="#!"><i class="far fa-heart"></i></a></li>
+                                    <li class="list-inline-item"><a class="btn" href="#!">Add to cart</a></li>
+                                    <li class="list-inline-item"><a class="btn" href="#productView"><i class="fas fa-expand"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h6> <a class="reset-anchor" href="detail.html">Foo AirBag</a></h6>
+                        <p class="small text-muted">$25</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- footer -->
+      <footer class="bg-dark text-white">
+        <div class="container py-4">
+          <div class="row py-5">
+            <div class="mb-3">
+              <h6 class="text-uppercase mb-3">Customer services</h6>
+              <ul class="list-unstyled mb-0">
+                <li><a class="footer-link" href="#!">Help &amp; Contact Us</a></li>
+                <li><a class="footer-link" href="#!">Returns &amp; Refunds</a></li>
+                <li><a class="footer-link" href="#!">Online Stores</a></li>
+                <li><a class="footer-link" href="#!">Terms &amp; Conditions</a></li>
+              </ul>
+            </div>
+            
+            <div class="">
+              <h6 class="text-uppercase mb-3">Company</h6>
+              <ul class="list-unstyled mb-0">
+                <li><a class="footer-link" href="#!">What We Do</a></li>
+                <li><a class="footer-link" href="#!">Available Services</a></li>
+                <li><a class="footer-link" href="#!">Latest Posts</a></li>
+                <li><a class="footer-link" href="#!">FAQs</a></li>
+              </ul>
+            </div>
+            
+            <div class="">
+              <h6 class="text-uppercase mb-3">Social media</h6>
+              <ul class="list-unstyled mb-0">
+                <li><a class="footer-link" href="https://www.twitter.com" target="_blank" title="Twitter" rel="nofollow"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a class="footer-link" href="https://www.instagram.com" target="_blank" title="Instagram" rel="nofollow"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a class="footer-link" href="https://www.facebook.com" target="_blank" title="Facebook" rel="nofollow"><i class="fab fa-facebook"></i> Facebook</a></li>
+              </ul>
+            </div>
+
+          </div>
+          
+          <div class="pt-4" style="border-color: #1d1d1d !important">
+            <div class="row">
+              <div class="text-center">
+                <p class="small text-muted">© 2022 All rights reserved.</p>
+              </div>
+              <div class="text-center">
+                <p class="small text-muted mb-0">Designed by <a class="text-white reset-anchor" href="">Shopaholic.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+    
+    </div>
+    
+      <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  </body>
+
 </html>

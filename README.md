@@ -1,2 +1,1 @@
-# html-g26
-Basic HTML and CSS 
+# couchjanus.github.io
