@@ -937,3 +937,85 @@ width: 96px;
 .wrapper div:nth-child(4):hover ~ .big-box {
     background: url("../images/product-4.jpg");
 }
+
+/* table */
+
+.table{
+    width:100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+    border-color: #6c757d;
+    border-collapse: collapse;
+}
+
+.table>tbody{
+    vertical-align: inherit;
+}
+
+.table>thead{
+    vertical-align: bottom;
+}
+
+.table>:not(:first-child){
+    border-top:2px solid currentColor;
+}
+
+.table-responsive{
+    overflow-x: auto;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.align-middle{
+    vertical-align: middle !important;
+}
+
+.align-items-center{
+    align-items: center !important;
+}
+
+.quantity{
+    display: flex;
+    align-items: center;
+}
+.quantity input{
+    width:2rem;
+    text-align: center;
+}
+
+.quantity button{
+    background: none;
+    border: none;
+    width: 1rem;
+    outline: none;
+}
+
+/* form */
+
+.form-control{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    border: 1px solid #ced4da;
+}
+
+.form-control-sm{
+    font-size: .875rem;
+    min-height: calc(1.5em + .75rem +2px);
+    padding: .375rem .75rem;
+}
+
+.fw-bold{
+    font-weight: 700;
+}
+
+.d-flex{
+    display: flex;
+}
